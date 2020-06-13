@@ -11,7 +11,7 @@ class RepetirProceso: #creamos una clase para el bucle
 
         texto = input("Escribe algo:") #pedimos al usuario que escriba algo
         
-        cadena = texto.lower().replace(",", "").replace(".", "").replace(" ", "").replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u")#lower convierte todas las letras a minusculas y replace cambia una vocal con acento a sin acento y las "," "." espacios los elimina, para que al final la cadena termine junta
+        cadena = texto.lower().replace(",", "").replace(".", "").replace(" ", "").replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u")#lower convierte todas las letras a minusculas y replace cambia una vocal con acento a sin acento, las "," "." y espacios los elimina, para que al final la cadena termine junta
 
         def palindromo(self): #creamos el método requerido
           igual, aux = 0, 0 #igualamos a 0 los contadores
@@ -20,13 +20,13 @@ class RepetirProceso: #creamos una clase para el bucle
               igual += 1
             aux += 1
           if len(self.cadena) == igual:
-            print ("La cadena es palindromo")
+            print ("La cadena es palindromo.")
           else:
-            print("La cadena no es palindromon")
+            print("La cadena no es palindromo.")
 
         def espacios(self):
               espacio = self.texto.count(" ") #la funcion count representa la cantidad de apariciones de una subcadena (en este caso los espacios) dentro de la cadena 
-              print("No. vocales en la cadena:",espacio)  
+              print("No. espacios en la cadena:",espacio)  
 
         def vocales(self):
             a = self.cadena.count("a") #la funcion count representa la cantidad de apariciones de una subcadena (en este caso las vocales) dentro de la cadena 
