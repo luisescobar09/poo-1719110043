@@ -10,18 +10,15 @@ class RepetirProceso: #creamos una clase para el bucle
       class Cadena(RepetirProceso): #creamos la clase para las cadenas y heredamos la clase base (el bucle). Al ya existir un constructor en la clase base ya no es necesario en la clase hija
 
         texto = input("Escribe algo:") #pedimos al usuario que escriba algo
-        
         cadena = texto.lower().replace(",", "").replace(".", "").replace(" ", "").replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u")#lower convierte todas las letras a minusculas y replace cambia una vocal con acento a sin acento, las "," "." y espacios los elimina, para que al final la cadena termine junta
 
         def palindromo(self): #creamos el método requerido
-          igual, aux = 0, 0 #igualamos a 0 los contadores
-
-          for i in reversed (range(0,len(self.cadena))): #el bucle for va a repetir sobre el rango de números, pero sera de forma invertida, usando reversed, usamos len para la longitud de la cadena y todo se almacenará en "i"
-            print(i)
-            if self.cadena[i].lower() == self.cadena[aux].lower(): #evaluar si el carácter ubicado en "i" de la variable cadena es igual al carácter ubicado en el índice "aux" en la variable cadena. 
-              igual += 1#si cumple la condicion almacena el resultado
-            aux += 1#si no la cumple, se almacena aquí
-          if len(self.cadena) == igual: #evalua si la longitud de la cadena es igual al valor que tiene la variable igual
+          invertida=""#creamos una cadena vacia
+          tamano=len(self.cadena) #asignamos el tamaño de la cadena
+          while tamano>0: #si cumple la condicion se ejecuta
+            tamano-=1 #será el decremento desde el valor final o mayor hasta el 0 como el while indica
+            invertida=invertida+self.cadena[tamano]#va a unir letra por letra, de forma que se guarden en serie
+          if self.cadena == invertida: #evalua si la cadena es igual al valor que tiene la variable invertida
             print ("La cadena es palíndromo.")#imprime esto si es verdadera
           else:
             print("La cadena no es palíndromo.")#caso contrario imprime lo contrario
