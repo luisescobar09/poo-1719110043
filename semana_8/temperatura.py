@@ -1,4 +1,4 @@
-class Temperaturas: #creamos una clase para el bucle
+class Temperaturas: #creamos una clase 
   temperaturas= [] #creamos la variable para almacenar los valores del arreglo
   
   archivos=()
@@ -31,7 +31,7 @@ class Temperaturas: #creamos una clase para el bucle
       self.archivos.write(fahrentxt)#pidamos que se escriban los valores ingresados en el txt
       self.archivos.write("°F \n")#identifica el tipo de temperatura
 
-  def promedio_celsius(self):#creamos método para valores en el txt
+  def promedios(self):#creamos método para valores en el txt
     suma=0#creamos una variable para el contador igualada a 0
     self.archivos.write("Promedio de las temperaturas en °C: \n")#titulo
     for i in self.temperaturas:#separamos cada valor ingresado
@@ -40,18 +40,13 @@ class Temperaturas: #creamos una clase para el bucle
     promedio_txt=str(promedio)#convertimos de float a string
     self.archivos.write(promedio_txt)#pedimos que se escriban los valores ingresados en el txt
     self.archivos.write("°C \n")#identificamos el tipo de temperatura
-  
-  def promedio_fahren(self):#creamos método para los valores en el txt
+
     self.archivos.write("Promedio de las temperaturas en °F: \n" )#titulo
-    suma=0#creamos una variable para el contador igualada a 0
-    for i in self.temperaturas:#separamos cada valor ingresado
-      suma+= i#sumamos cada valor almacenado
-    promedio = suma / len(self.temperaturas)#calculamos la suma de todos los valores entre el numero de vslores para promediar
     prom_fahren=(promedio*1.8)+32#convertimos el promedio a °F
     promedio_txt=str(prom_fahren)#convertimos de float a string
     self.archivos.write(promedio_txt)#pedimos que se escriban los valores ingresados en el txt
     self.archivos.write("°F \n")#identificamos el tipo de temperatura
-
+  
   def cerrar_archivo(self):#creamos método para cerrar el txt
     self.archivos.close()#con "close" cerramos el txt
 
@@ -60,6 +55,5 @@ objeto.abrir()
 objeto.leer_repetir() #llamamos a cada método para que se ejecute 
 objeto.celsius()
 objeto.fahrenheit()
-objeto.promedio_celsius()
-objeto.promedio_fahren()
+objeto.promedios()
 objeto.cerrar_archivo()
