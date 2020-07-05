@@ -1,10 +1,13 @@
 class Temperaturas: #creamos una clase para el bucle
   temperaturas= [] #creamos la variable para almacenar los valores del arreglo
-  archivos = open("temperaturas.txt","a")#abrimos el archivo "txt" con "open" con el modo "a" para agregar información que escribamos
-
+  
+  archivos=()
   def __init__(self): #agregamos el constructor
     pass
-  
+    
+  def abrir(self):
+    self.archivos = open("temperaturas.txt","a")#abrimos el archivo "txt" con "open" con el modo "a" para agregar información que escribamos
+
   def leer_repetir(self): #creamos el método para el bucle
     repetir = "s" #creamos la variable a evaluar
     while repetir=="S" or repetir=="s": #mientras cumpla la condicion, todo lo que esté adentro se cumplirá
@@ -53,6 +56,7 @@ class Temperaturas: #creamos una clase para el bucle
     self.archivos.close()#con "close" cerramos el txt
 
 objeto= Temperaturas()  #creamos el objeto que llame a la clase
+objeto.abrir()
 objeto.leer_repetir() #llamamos a cada método para que se ejecute 
 objeto.celsius()
 objeto.fahrenheit()

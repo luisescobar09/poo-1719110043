@@ -10,3 +10,15 @@ Promedio de las temperaturas en °C:
 17.666666666666668°C 
 Promedio de las temperaturas en °F: 
 63.800000000000004°F 
+Temperaturas en °C: 
+15.0°C 
+18.0°C 
+20.0°C 
+Temperaturas de °C a °F: 
+59.0°F 
+64.4°F 
+68.0°F 
+Promedio de las temperaturas en °C: 
+17.666666666666668°C 
+Promedio de las temperaturas en °F: 
+63.800000000000004°F 
