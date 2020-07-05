@@ -4,7 +4,7 @@ class Temperaturas: #creamos una clase para el bucle
   archivos=()
   def __init__(self): #agregamos el constructor
     pass
-    
+
   def abrir(self):
     self.archivos = open("temperaturas.txt","a")#abrimos el archivo "txt" con "open" con el modo "a" para agregar información que escribamos
 
@@ -41,8 +41,8 @@ class Temperaturas: #creamos una clase para el bucle
     self.archivos.write(promedio_txt)#pedimos que se escriban los valores ingresados en el txt
     self.archivos.write("°C \n")#identificamos el tipo de temperatura
   
-  def promedio_fahren(self):
-    self.archivos.write("Promedio de las temperaturas en °F: \n" )#creamos método para los valores en el txt
+  def promedio_fahren(self):#creamos método para los valores en el txt
+    self.archivos.write("Promedio de las temperaturas en °F: \n" )#titulo
     suma=0#creamos una variable para el contador igualada a 0
     for i in self.temperaturas:#separamos cada valor ingresado
       suma+= i#sumamos cada valor almacenado
