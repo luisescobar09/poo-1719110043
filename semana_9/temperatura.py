@@ -6,7 +6,7 @@ class Temperaturas: #creamos una clase
   def __init__(self): #agregamos el constructor
     pass
 
-  def abrir(self):#cremos el metodo para abrir el txt
+  def abrir_txt(self):#cremos el metodo para abrir el txt
     self.archivos = open("temperaturas.txt","a")#abrimos el archivo "txt" con "open" con el modo "a" para agregar información que escribamos
 
   def leer_repetir(self): #creamos el método para el bucle
@@ -57,13 +57,13 @@ class Temperaturas: #creamos una clase
     fecha_temperatura=self.fechas[posicion]#el usuario ingresó una temperatura con su respectiva fecha, por lo tanto cada posicion está ordenada. Para encontrar la fecha de la temperatura mayor en el arreglo de fechas buscamos la posicion que le corresponde a esa fecha con la temperatura mayor.
     print("Fecha de la temperatura mayor:",fecha_temperatura)#imprimimos fecha 
 
-  def cerrar_archivo(self):#creamos método para cerrar el txt
+  def cerrar_txt(self):#creamos método para cerrar el txt
     self.archivos.close()#con "close" cerramos el txt
 
 objeto= Temperaturas()  #creamos el objeto que llame a la clase
-objeto.abrir()
+objeto.abrir_txt()
 objeto.leer_repetir() #llamamos a cada método para que se ejecute 
 objeto.celsius()
 objeto.promedios()
 objeto.temperatura_fecha_mayor()
-objeto.cerrar_archivo()
+objeto.cerrar_txt()
