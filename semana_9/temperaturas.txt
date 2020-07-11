@@ -1,0 +1,16 @@
+Fecha: 07 de junio 2020
+Temperatura °C: 21.0°C 
+Temperatura de °C a °F: 69.80000000000001°F 
+
+Fecha: 08 de junio 2020
+Temperatura °C: 17.0°C 
+Temperatura de °C a °F: 62.6°F 
+
+Fecha: 09 de junio 2020
+Temperatura °C: 23.0°C 
+Temperatura de °C a °F: 73.4°F 
+
+Fecha: 10 de junio 2020
+Temperatura °C: 20.0°C 
+Temperatura de °C a °F: 68.0°F 
+
