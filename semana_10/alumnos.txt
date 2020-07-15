@@ -1,0 +1,3 @@
+Nombre: Juan García, año nacimiento: 1998, grupo: TIC110
+Nombre: Marco Cruz, año nacimiento:  1995, grupo: CON81
+Nombre: Martha Martínez, año nacimiento: 1993, grupo: NANO92
