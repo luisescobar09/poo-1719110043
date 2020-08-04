@@ -26,7 +26,7 @@ class Peliculas: #creamos una clase
       self.genero.append(genero)#almacenamos todos los generos ingresados en el arreglo
       print("Genero:",genero)
       #dato3=("Año lanzamiento:",lanzamiento)
-      self.nombre_lanzamiento.append("\nNombre: "+str(nombre)+"\nAño lanzamiento: "+str(lanzamiento))#guardamos nombre y año juntos poorque el diccionario solo permite dos valores
+      self.nombre_lanzamiento.append("\nNombre: "+nombre+"\nAño lanzamiento: "+str(lanzamiento))#guardamos nombre y año juntos poorque el diccionario solo permite dos valores
       print("Año lanzamiento:",lanzamiento)
 
   def generoPeli(self): #metodo de busqueda,almacenamiento y convertir a diccionario
