@@ -26,7 +26,7 @@ class Excepciones: #creamos una clase
       except Exception as error:#si hay un error del usuario
         print("Datos erroneos, favor de verificar.")
     except Exception as error:#si hay un error del usuario
-      print("Datos erroneos, favor de verificar") 
+      print("Datos erroneos, favor de verificar.") 
 
   def parNon(self):#creamos un método para saber si es par o impar
     try:#intenta comprobar que sea correcto
